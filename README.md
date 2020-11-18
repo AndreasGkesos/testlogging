@@ -67,27 +67,34 @@ To LogGroup θα δημιουργηθεί αυτόματα αν έχουμε τ�
 Θα χρειαστούμε το aws Toolkit extension for visual studio.
 Σε αυτό θα συνδέσουμε ένα χρήστη που θα φτιάξουμε στο aws και με αυτό θα κάνουμε pusblish το app στο aws. Θα πρέπει αυτός ο χρήστης να έχει τα κατάλληλα permissions για να γίνει σωστά το pusblish και να δουλέψει το logging.
 
+https://imgur.com/IcTZ2gp
 ![Προσθήκη καινούριου προφίλ](https://imgur.com/IcTZ2gp)
 Κάνουμε import τα credentials του χρήστη που δημιουργήσαμε
 
+https://imgur.com/j7qZdiI
 ![Publish to aws](https://imgur.com/j7qZdiI) 
 Εφόσον έχουμε συνδεθεί στο aws toolkit μπορούμε να κάνουμε publish.
 
+https://imgur.com/aB13s2E
 ![.](https://imgur.com/aB13s2E)
 Για account profile αφήνουμε το default.
 Region, πρέπει να είναι η ίδια με τη region που βάλαμε στο appsettings.json
 Και δημιουργούμε καινούριο περιβάλλον.
 
+https://imgur.com/65xXx40
 ![Επιλογή Environment](https://imgur.com/65xXx40)
 Επιλογή url του app.
 
+https://imgur.com/K7pOBd5
 ![EC2 config](https://imgur.com/K7pOBd5)
 Επιλογή container και instance type. Βάζω πάντα Linux και t2.micro γιατί ξέρω είναι στο aws free.
 
+https://imgur.com/LXgmv0z
 ![Επιλογή ρόλου](https://imgur.com/LXgmv0z)
 Εδώ πρέπει να διαλέξουμε το cloudwatch full access από το dropdown.
 Επίσης ο χρήστης μας πρέπει να έχει αυτό το permission.
 
+https://imgur.com/GDNjp1l
 ![Build Configuration](https://imgur.com/GDNjp1l)
 Επιλέγουμε Release και τέλος Finish.
 
